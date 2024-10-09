@@ -2,10 +2,14 @@
   "name": "myexpressapp",
   "version": "0.0.0",
   "private": true,
-  "main":"app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "build": "react-scripts build"
+    "start": "node index.js",            // Runs the main Node.js server file
+    "build": "webpack --config webpack.config.js", // Example build command (if using Webpack)
+    "test": "mocha",                     // Runs the test suite using Mocha (replace with your test runner)
+    "dev": "nodemon index.js",           // Starts the app in development mode with live reload
+    "lint": "eslint .",                  // Runs ESLint on all files to check for code quality
+    "postinstall": "npm run build"       // Runs after `npm install` to automatically build the project
   },
   "dependencies": {
     "@strapi/strapi": "^4.20.5",
