@@ -4,8 +4,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",            // Runs the main Node.js server fil
-    "postinstall": "npm run build"       // Runs after `npm install` to automatically build the project
+    "start": "node index.js",       
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "@strapi/strapi": "^4.20.5",
